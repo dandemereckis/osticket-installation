@@ -59,7 +59,7 @@ From the control panel we need to install Internet Information Services (IIS) wi
 <br />
 
 <p>
-From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
+We will then download and install PHP Manager if IIS. (Link to download: <a>https://drive.google.com/uc?id=1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_&export=download</a>)
 </p>
 <p>
 <img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
