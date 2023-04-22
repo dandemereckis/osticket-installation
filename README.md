@@ -140,11 +140,6 @@ We will then click "Register new PHP Version" and register is to our executable 
 Now we can finally download our osTicket!  (Link to download: <a href="https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Download osTicket</a>)
 </p>
 <p>
-<img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
-</p>
-<br />
-
-<p>
 When you open the osTicket download folder you will see a "scripts" folder and an "upload" folder.  We need to copy the "upload" folder into a new folder that was created automatically (C:\inetpub\wwwroot).  Once copied we need to rename the "upload" folder to "osTicket". (Make sure it is spelled exactly osTicket with no spaces. If spelled differently we will get a 404 error page later on)
 </p>
 <p>
