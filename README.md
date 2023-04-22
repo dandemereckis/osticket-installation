@@ -35,7 +35,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 First step is to create a virtual machine using Microsoft Azure. Our virtual machine will be running Windows 10.
 </p>
 <p>
-<img src="https://imgur.com/ENjbog3" height="80%" width="80%" alt="Create VM"/>
+<img src="https://i.imgur.com/ENjbog3.jpg" height="80%" width="80%" alt="Create VM"/>
 </p>
 <br />
 
