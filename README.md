@@ -179,7 +179,7 @@ As you can see we have red X's indicating we won't be able to use all features o
 <img src="https://i.imgur.com/kw0hpC3.jpg" height="80%" width="80%" alt="Enable the Following Extensions"/>
 </p>
 <br />
-
+<hr>
 <p>
 If we now refresh the osTicket Installer browser we can see that some of the red X's have turned green.
 </p>
@@ -187,21 +187,70 @@ If we now refresh the osTicket Installer browser we can see that some of the red
 <img src="https://i.imgur.com/MYHk7K1.jpg" height="80%" width="80%" alt="Refresh osTicket Browser"/>
 </p>
 <br />
-
+<hr>
 <p>
 Next we will navigate back to our wwwroot directory (C:\inetpub\wwwroot) and open the osTicket folder.  Inside there will be a folder named "Include", open that folder and scroll to a file called "ost-sampleconfig.php".  We will rename this file "ost-config.php" (Just take out the word Sample)
 </p>
 <p>
 <img src="https://i.imgur.com/1kESJbx.jpg" height="80%" width="80%" alt="Open osTicket Folder"/>
 </p>
-<img src="https://i.imgur.com/1kESJbx.jpg" height="80%" width="80%" alt="Open osTicket Folder"/>
+<img src="https://i.imgur.com/qeh8lV9.jpg" height="80%" width="80%" alt="Open Include Folder"/>
 <img src="https://i.imgur.com/C2ZhSib.jpg" height="80%" width="80%" alt="ost-config image"/>
 <br />
-
+<hr>
 <p>
-From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
+We will then right click on the file "ost-config" and click properties.  We will then click on the Security tab and click Advanced.  We will click the Disable Inheritance button then click "Remove all inherited permissions from this object". Once we do this we will be able to add our own permissions to the file.  Click on "Select a Principal" and type in Everyone to allow every access to this file.  We will then click "Full Control". (The reason we are doing this is so we don't run into any issues restricting access to the file while the osTicket installer runs)
 </p>
 <p>
-<img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
+<img src="https://i.imgur.com/43LlNKu.jpg" height="80%" width="80%" alt="Click on Properties, then Security"/>
+<img src="https://i.imgur.com/Rx0muos.jpg" height="80%" width="80%" alt="Click Disable Inheritance"/>
+<img src="https://i.imgur.com/gNNAbHT.jpg" height="80%" width="80%" alt="Give Permissions to Everyone"/>
+<img src="https://i.imgur.com/IUtIf7s.jpg" height="80%" width="80%" alt="Full Control Access"/>
 </p>
 <br />
+<hr>
+<p>
+We will go back to our osTicket Installer window and click Continue at the bottom.  Fill out the information on the next page however you like, just make sure you remember the Admin username and password that you choose.
+</p>
+<p>
+<img src="https://i.imgur.com/MYHk7K1.jpg" height="80%" width="80%" alt="osTicket Browser"/>
+<img src="https://i.imgur.com/BJb9L1S.jpg" height="80%" width="80%" alt="osTicket Basic Installation Page"/>
+</p>
+<br />
+<hr>
+<p>
+Before we can continue with the Database Settings we need to install HeidiSQL. This will allow us to connect to our SQL database we made earlier.  Once HeidiSQL finishes downloading it should open. Click "New" at the bottom left corner.  It will ask for our Username and Password for our database. The Username is Root and the Password is what you made it earlier when you created the MySQL database.  Then click Open.  Next we need to create a new database in HeidiSQL by right clicking on Unnamed, then hover over Create New, then click on Database.  We will name the new database osTicket. (Link to download: <a href="https://www.google.com/url?q=https://www.heidisql.com/installers/HeidiSQL_12.3.0.6589_Setup.exe&sa=D&source=docs&ust=1682197086962888&usg=AOvVaw12TnD9HQsSCIRX4xa7ZWJM">Download HeidiSQL</a>)
+</p>
+<p>
+<img src="https://i.imgur.com/m2LSDei.jpg" height="80%" width="80%" alt="Install HeidiSQL"/>
+<img src="https://i.imgur.com/QEN8ZZv.jpg" height="80%" width="80%" alt="Connect to MySQL Database"/>
+<img src="https://i.imgur.com/opvEsWJ.jpg" height="80%" width="80%" alt="Create New Database in HeidiSQL"/>
+<img src="https://i.imgur.com/SsfjtqO.jpg" height="80%" width="80%" alt="Name Database osTicket"/>  
+</p>
+<br />
+<hr>
+<p>
+Now we can complete our Database Settings in the osTicket Installer web browser.  Our MySQL Database will be osTicket and then type in our Username and Password for the database that we created earlier then click Install Now.
+</p>
+<p>
+<img src="https://i.imgur.com/rCwjaZP.jpg" height="80%" width="80%" alt="Complete Database Settings"/>
+<img src="https://i.imgur.com/iuDbNqV.jpg" height="80%" width="80%" alt="Complete Database Settings"/>
+<img src="https://i.imgur.com/opvEsWJ.jpg" height="80%" width="80%" alt="Create New Database in HeidiSQL"/>
+<img src="https://i.imgur.com/SsfjtqO.jpg" height="80%" width="80%" alt="Name Database osTicket"/>
+<img src="https://i.imgur.com/Wgq9XHf.jpg" height="80%" width="80%" alt="Congratulations Page"/>    
+</p>
+<br />
+<hr>
+<p>
+We are almost finished with the installation and setup.  We have to go back into the C:\inetpub\wwwroot\osTicket and delete the "Setup" folder.  Then back inside C:\inetpub\wwwroot\osTicket\include we are going to set the permissions for ost-config.php back to Read Only.
+</p>
+<p>
+<img src="https://i.imgur.com/xoFEBj6.jpg" height="80%" width="80%" alt="Delete the Setup Folder"/>
+<img src="https://i.imgur.com/ZIFEGAj.jpg" height="80%" width="80%" alt="Include Folder"/>
+<img src="https://i.imgur.com/DNH8tLf.jpg" height="80%" width="80%" alt="Edit Properties"/>
+<img src="https://i.imgur.com/ENjbog3.jpg" height="80%" width="80%" alt="Set Back to Read Only"/>  
+</p>
+<br />
+<hr>
+<p>
+Our installation is now complete!  In the next section we will configure osTicket so we can use it!
