@@ -181,19 +181,21 @@ As you can see we have red X's indicating we won't be able to use all features o
 <br />
 
 <p>
-From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
+If we now refresh the osTicket Installer browser we can see that some of the red X's have turned green.
 </p>
 <p>
-<img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
+<img src="https://i.imgur.com/MYHk7K1.jpg" height="80%" width="80%" alt="Refresh osTicket Browser"/>
 </p>
 <br />
 
 <p>
-From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
+Next we will navigate back to our wwwroot directory (C:\inetpub\wwwroot) and open the osTicket folder.  Inside there will be a folder named "Include", open that folder and scroll to a file called "ost-sampleconfig.php".  We will rename this file "ost-config.php" (Just take out the word Sample)
 </p>
 <p>
-<img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
+<img src="https://i.imgur.com/1kESJbx.jpg" height="80%" width="80%" alt="Open osTicket Folder"/>
 </p>
+<img src="https://i.imgur.com/1kESJbx.jpg" height="80%" width="80%" alt="Open osTicket Folder"/>
+<img src="https://i.imgur.com/C2ZhSib.jpg" height="80%" width="80%" alt="ost-config image"/>
 <br />
 
 <p>
