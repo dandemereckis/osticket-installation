@@ -48,8 +48,8 @@ We will then use Remote Desktop Connection to log into our virtual machine.
 <p>
 <img src="https://i.imgur.com/MFkqhpZ.jpg" height="80%" width="80%" alt="VM Desktop"/>
 </p>
-<br />
 
+<hr>
 <p>
 From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
 </p>
@@ -57,7 +57,7 @@ From the control panel we need to install Internet Information Services (IIS) wi
 <img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
 </p>
 <br />
-
+<hr>
 <p>
 We will then download and install PHP Manager if IIS. (Link to download: <a href="https://drive.google.com/uc?id=1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_&export=download">PHP Manager Download</a>)
 </p>
@@ -65,7 +65,7 @@ We will then download and install PHP Manager if IIS. (Link to download: <a href
 <img src="https://i.imgur.com/LaHfdiI.jpg"/>
 </p>
 <br />
-
+<hr>
 <p>
 We will then download the Rewrite Module.  This is needed for osTicket to access URLs behind the scenes properly.  (Link to download: <a href="https://drive.google.com/uc?id=1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY&export=download">Download Rewrite Module</a>)
 </p>
@@ -73,7 +73,7 @@ We will then download the Rewrite Module.  This is needed for osTicket to access
 <img src="https://i.imgur.com/p87FkW3.jpg" height="80%" width="80%" alt="Download Rewrite Module"/>
 </p>
 <br />
-
+<hr>
 <p>
 We will then create a new directory in the C:\ Drive called PHP to store all of our PHP files.
 </p>
@@ -81,7 +81,7 @@ We will then create a new directory in the C:\ Drive called PHP to store all of 
 <img src="https://i.imgur.com/liMIcIR.jpg" height="80%" width="80%" alt="Create PHP Folder in C:\ Drive"/>
 </p>
 <br />
-
+<hr>
 <p>
 Next step will be to download the files for PHP 7.3.8 and unzip those files into the PHP directoy we just created.  (Link to download: <a href="https://drive.google.com/uc?id=1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP&export=download">Download PHP 7.3.8</a>)
 </p>
@@ -89,7 +89,7 @@ Next step will be to download the files for PHP 7.3.8 and unzip those files into
 <img src="https://i.imgur.com/Bd87z3k.jpg" height="80%" width="80%" alt="Extract Files into C:\ Driver"/>
 </p>
 <br />
-
+<hr>
 <p>
 Next we will download Microsoft Visual C++ Redistributable. This is needed for PHP to run correctly.  (Link to download: <a href="https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view">Download C++ Redistributable</a>)
 </p>
@@ -97,7 +97,7 @@ Next we will download Microsoft Visual C++ Redistributable. This is needed for P
 <img src="https://i.imgur.com/n3AOsxf.jpg" height="80%" width="80%" alt="Download C++ Redistributable"/>
 </p>
 <br />
-
+<hr>
 <p>
 Next we need to download MySQL 5.5.62. This is needed as a database to store all users and information for osTicket.  When setting up credentials choose standard configuration.  It will ask you to create a Root password, make sure you write this password down and don't forget it. (Link to download: <a href="https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view">Download MySQL</a>)
 </p>
@@ -108,7 +108,7 @@ Next we need to download MySQL 5.5.62. This is needed as a database to store all
 <img src="https://i.imgur.com/KI9EquM.jpg" height="80%" width="80%" alt="Create Root Password"/>
 </p>
 <br />
-
+<hr>
 <p>
 We will then open IIS as an Admin so we can register our PHP within IIS.
 </p>
@@ -116,7 +116,7 @@ We will then open IIS as an Admin so we can register our PHP within IIS.
 <img src="https://i.imgur.com/bwfDsrx.jpg" height="80%" width="80%" alt="Open IIS as an Administrator"/>
 </p>
 <br />
-
+<hr>
 <p>
 We will open the PHP Manager that we installed earlier.
 </p>
@@ -124,7 +124,7 @@ We will open the PHP Manager that we installed earlier.
 <img src="https://i.imgur.com/3vFS0hn.jpg" height="80%" width="80%" alt="Open PHP Manager"/>
 </p>
 <br />
-
+<hr>
 <p>
 We will then click "Register new PHP Version" and register is to our executable file within the PHP folder we created earlier.  Afterwards go to the main page of IIS Manager and restart the server.
 </p>
@@ -135,7 +135,7 @@ We will then click "Register new PHP Version" and register is to our executable 
 <img src="https://i.imgur.com/Blu8TYv.jpg" height="80%" width="80%" alt="Restart Server"/>
 </p>
 <br />
-
+<hr>
 <p>
 Now we can finally download our osTicket!  (Link to download: <a href="https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Download osTicket</a>)
 </p>
@@ -146,7 +146,7 @@ When you open the osTicket download folder you will see a "scripts" folder and a
 <img src="https://i.imgur.com/fgFyhDs.jpg" height="80%" width="80%" alt="Copy Upload Folder to wwwroot folder"/>
 </p>
 <br />
-
+<hr>
 <p>
 We then have to go back into IIS Manager and restart the server once again.
 </p>
@@ -154,7 +154,7 @@ We then have to go back into IIS Manager and restart the server once again.
 <img src="https://i.imgur.com/Blu8TYv.jpg" height="80%" width="80%" alt="Restart Server"/>
 </p>
 <br />
-
+<hr>
 <p>
 On the left hand side of IIS Manager we have to navigate to "Sites" - "Default Web Site" - osTicket.  Once in osTicket click on "Browse *.80(http).  This will open the osTicket installer in a new web browser window.
 </p>
@@ -165,7 +165,7 @@ On the left hand side of IIS Manager we have to navigate to "Sites" - "Default W
 <img src="https://i.imgur.com/eoh2oFf.jpg" height="80%" width="80%" alt="osTicket Installer Window"/>
 </p>
 <br />
-
+<hr>
 <p>
 From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
 </p>
