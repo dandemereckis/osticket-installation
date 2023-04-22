@@ -99,10 +99,13 @@ Next we will download Microsoft Visual C++ Redistributable. This is needed for P
 <br />
 
 <p>
-From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
+Next we need to download MySQL 5.5.62.  When setting up credentials choose standard configuration.  It will ask you to create a Root password, make sure you write this password down and don't forget it. (Link to download: <a href="https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view">Download MySQL</a>)
 </p>
 <p>
-<img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
+<img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Download MySQL"/>
+</p>
+<p>
+<img src="https://i.imgur.com/KI9EquM.jpg" height="80%" width="80%" alt="Create Root Password"/>
 </p>
 <br />
 
