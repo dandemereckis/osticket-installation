@@ -75,7 +75,7 @@ We will then download the Rewrite Module.  This is needed for osTicket to access
 <br />
 
 <p>
-We will then create a new directory in the C:\ drive called PHP to store all of our PHP files.
+We will then create a new directory in the C:\ Drive called PHP to store all of our PHP files.
 </p>
 <p>
 <img src="https://i.imgur.com/liMIcIR.jpg" height="80%" width="80%" alt="Create PHP Folder in C:\ Drive"/>
@@ -83,10 +83,10 @@ We will then create a new directory in the C:\ drive called PHP to store all of 
 <br />
 
 <p>
-From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
+Next step will be to download the files for PHP 7.3.8 and unzip those files into the PHP directoy we just created.  (Link to download: <a href="https://drive.google.com/uc?id=1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP&export=download">Download PHP 7.3.8</a>)
 </p>
 <p>
-<img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
+<img src="https://i.imgur.com/Bd87z3k.jpg" height="80%" width="80%" alt="Extract Files into C:\ Driver"/>
 </p>
 <br />
 
