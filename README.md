@@ -39,6 +39,7 @@ First step is to create a virtual machine using Microsoft Azure. Our virtual mac
 </p>
 <br />
 
+
 <p>
 We will then use Remote Desktop Connection to log into our virtual machine.
 </p>
