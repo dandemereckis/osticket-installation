@@ -167,10 +167,16 @@ On the left hand side of IIS Manager we have to navigate to "Sites" - "Default W
 <br />
 <hr>
 <p>
-From the control panel we need to install Internet Information Services (IIS) with CGI. This will allow us to install PHP manager which will be needed to run our osTicket.
+As you can see we have red X's indicating we won't be able to use all features of osTicket. We are going to enable some of these extensions now. First we will open our PHP Manager again.  We will then click on Enable or Disable an Extension.  We are going to enable the following extensions: php_imap.dll, php_intl.dll, and php_opcache.dll (To enable just right click on extenstion then click Enable)
 </p>
 <p>
-<img src="https://i.imgur.com/vUygTZR.jpg" height="80%" width="80%" alt="Install IIS with CGI"/>
+<img src="https://i.imgur.com/3vFS0hn.jpg" height="80%" width="80%" alt="Open PHP Manager"/>
+</p>
+<p>
+<img src="https://i.imgur.com/aBQgwO8.jpg" height="80%" width="80%" alt="Click on Enable Extensions"/>
+</p>
+<p>
+<img src="https://i.imgur.com/kw0hpC3.jpg" height="80%" width="80%" alt="Enable the Following Extensions"/>
 </p>
 <br />
 
